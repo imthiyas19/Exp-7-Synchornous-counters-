@@ -1,4 +1,4 @@
-![DU](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/4987ab59-b623-4b0e-948a-140ed2d9be7d)![U](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/1d39840d-f90c-42e9-89df-61140ff006f1)# Exp-6-Synchornous-counters - up counter and down counter 
+# Exp-6-Synchornous-counters - up counter and down counter 
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
