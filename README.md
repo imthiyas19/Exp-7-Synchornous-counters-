@@ -1,4 +1,4 @@
-# Exp-6-Synchornous-counters - up counter and down counter 
+![DU](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/4987ab59-b623-4b0e-948a-140ed2d9be7d)![U](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/1d39840d-f90c-42e9-89df-61140ff006f1)# Exp-6-Synchornous-counters - up counter and down counter 
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
@@ -46,43 +46,80 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
+/* 1.Create a new project in QuartusII software.
 
+2.Name the project as uc for upcounter and dc for down counter.
+
+3.Create a new verilog hdl file in the project file.
+
+4.Name the module as dc and uc for down counter and up counter.
+
+5.Within the module declare input and output variables.
+
+6.Create a loop using if-else with condition parameter as reset value.
+
+7.End the loop.
+
+8.End the module. */
 
 
 ### PROGRAM 
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
 
+/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+
+Developed by: MOHAMMED IMTHIYAS .M
+
+RegisterNumber:212222230083
+
+UP COUNTER:
+module sync(clk,t); input clk; output reg [0:2]t; always@ (posedge clk) begin t[2]=((t[1]&t[0])^t[2]); t[1]=t[0]^t[1]; t[0]=1^t[0]; end endmodule
+
+DOWN COUNTER:
+module sync(clk,t); input clk; output reg [0:2]t; wire bar2,bar1,bar0; not(bar2,t[2]); not(bar1,t[1]); not(bar0,t[0]); always@ (posedge clk) begin t[2]=((bar1&bar0)^t[2]); t[1]=bar0^t[1]; t[0]=1^t[0]; end endmodule */
 
 
 
 
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
+### UP COUNTER:
 
 
 
+![UP](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/b0570161-e619-40fa-a4b2-adb8d9ab117b)
+
+### DOWN COUNTER:
 
 
-
-
+![DOWN](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/d074a771-d801-40e6-8415-923c018e1ef1)
 
 
 ### TIMING DIGRAMS FOR COUNTER  
+### UP COUNTER:
+
+![U](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/51c5f663-3c41-4f25-b11a-ba6ca30fd1a8)
 
 
+### DOWN COUNTER:
 
 
+![D](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/b7a1fc0f-a4f2-4b36-8345-db2829cc1ae7)
 
 ### TRUTH TABLE 
+### UP COUNTER:
 
 
 
 
+![TU](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/5e6a3db6-caf4-4b6d-8a6e-0302aea18921)
+### DOWN COUNTER:
 
+
+
+![DU](https://github.com/imthiyas19/Exp-7-Synchornous-counters-/assets/120353416/5096723b-6c43-4727-8acf-9f10369e134e)
 
 ### RESULTS 
+Thus, 4 bit up and down counters are implemented and its functionality is validated successfully.
+
+
+
